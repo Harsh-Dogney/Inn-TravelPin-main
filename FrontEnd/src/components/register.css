@@ -1,0 +1,91 @@
+/* Default styles for the register container */
+.registerContainer {
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Cancel button position */
+.registerCancel {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  cursor: pointer;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: slateblue;
+  font-weight: 700;
+}
+
+/* Register button styling */
+.registerBtn {
+  border: none;
+  padding: 10px;
+  background-color: slateblue;
+  color: white;
+  cursor: pointer;
+  width: 100%; /* Ensure full-width buttons */
+}
+
+/* Success and failure messages */
+.success {
+  font-size: 12px;
+  color: green;
+  text-align: center;
+}
+
+.failure {
+  font-size: 12px;
+  color: red;
+  text-align: center;
+}
+
+/* Responsiveness: Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .registerContainer {
+    width: 80%; /* Adjust width for medium screens */
+    height: auto; /* Allow height to adjust dynamically */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .registerBtn {
+    padding: 8px; /* Adjust padding for buttons */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .registerContainer {
+    width: 90%; /* Further reduce width for very small screens */
+    height: auto;
+  }
+
+  .logo {
+    font-size: 18px; /* Reduce font size for the logo */
+  }
+
+  .registerBtn {
+    padding: 10px; /* Maintain balanced padding */
+  }
+
+  .success,
+  .failure {
+    font-size: 10px; /* Adjust text size for messages */
+  }
+}

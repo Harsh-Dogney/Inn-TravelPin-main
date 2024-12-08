@@ -1,0 +1,84 @@
+/* Default styles for the login container */
+.loginContainer {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Cancel button position */
+.loginCancel {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  cursor: pointer;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: teal;
+  font-weight: 700;
+}
+
+/* Login button styling */
+.loginBtn {
+  border: none;
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Failure message styling */
+.failure {
+  font-size: 12px;
+  color: red;
+  text-align: center;
+}
+
+/* Responsiveness: Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .loginContainer {
+    width: 80%;  /* Make the container width responsive */
+    height: auto;  /* Allow height to adjust based on content */
+    padding: 15px;  /* Reduce padding on smaller screens */
+  }
+
+  .loginBtn {
+    padding: 8px;  /* Adjust button padding */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .loginContainer {
+    width: 90%;  /* Further reduce width for very small screens */
+    height: auto;
+  }
+
+  .logo {
+    font-size: 18px;  /* Make the logo text smaller */
+  }
+
+  .loginBtn {
+    padding: 10px;  /* Adjust the button padding for smaller devices */
+  }
+
+  .failure {
+    font-size: 10px;  /* Reduce the size of the failure message */
+  }
+}

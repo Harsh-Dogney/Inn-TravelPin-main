@@ -1,0 +1,187 @@
+/* Default styles for the card */
+.card {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Label styling */
+label {
+  width: max-content;
+  color: tomato;
+  font-size: 13px;
+  border-bottom: 0.5px solid tomato;
+  margin: 3px 0;
+}
+
+/* Description and text styles */
+.desc {
+  font-size: 14px;
+}
+
+.star {
+  color: gold;
+}
+
+.username {
+  font-size: 14px;
+}
+
+.date {
+  font-size: 12px;
+}
+
+/* Form styling */
+form {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(88, 87, 87);
+}
+
+/* Input and textarea styles */
+input {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 12px;
+  color: rgb(185, 184, 184);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+/* Submit button styles */
+.submitButton {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: tomato;
+  cursor: pointer;
+}
+
+/* Buttons and logout styling */
+.buttons,
+.logout {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.button {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.logout {
+  background-color: tomato;
+}
+
+.login {
+  background-color: teal;
+  margin-right: 10px;
+}
+
+.register {
+  background-color: slateblue;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%; /* Adjust width for medium screens */
+    height: auto; /* Allow dynamic height */
+    padding: 15px; /* Add padding for better spacing */
+    margin: 10px auto; /* Center align */
+  }
+
+  form {
+    width: 90%; /* Adjust form width */
+    height: auto;
+  }
+
+  label {
+    font-size: 12px; /* Adjust label font size */
+  }
+
+  .desc,
+  .username {
+    font-size: 13px; /* Adjust text size */
+  }
+
+  .date {
+    font-size: 11px;
+  }
+
+  .submitButton {
+    padding: 8px; /* Increase padding for touch devices */
+  }
+
+  .button {
+    padding: 7px; /* Adjust button padding */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%; /* Full width for smaller screens */
+    padding: 10px;
+  }
+
+  form {
+    width: 100%; /* Match card width */
+  }
+
+  label {
+    font-size: 11px; /* Further reduce font size */
+  }
+
+  .desc,
+  .username {
+    font-size: 12px;
+  }
+
+  .date {
+    font-size: 10px;
+  }
+
+  .submitButton {
+    width: 100%; /* Full-width button for small screens */
+    padding: 10px;
+  }
+
+  .buttons,
+  .logout {
+    top: 5px; /* Adjust position */
+    right: 5px;
+  }
+
+  .button {
+    font-size: 12px; /* Adjust button text size */
+    padding: 5px;
+  }
+}
