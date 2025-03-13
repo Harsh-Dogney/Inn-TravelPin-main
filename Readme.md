@@ -57,19 +57,3 @@ Once the application is running, follow these steps:
 2. Double-click on the map to add a new pin.
 3. Fill in the title, description, and rating, then click "Add Pin" to save it.
 
-## Folder Structure
-
-```bash
-Inn-TravelInn/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   ├── Register.js
-│   │   ├── Login.js
-│   ├── App.js
-│   ├── app.css
-│   └── index.js
-├── .env
-├── package.json
-└── README.md
